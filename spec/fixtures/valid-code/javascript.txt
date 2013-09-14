@@ -1,0 +1,6 @@
+####Unit Test Code is Valid
+```JavaScript
+var x = function () { return 1234 + 4567 }
+```
+
+

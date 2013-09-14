@@ -1,0 +1,6 @@
+####Unit Test Code is Valid
+```CoffeeScript
+x = () -> return 1234 + 4567
+```
+
+

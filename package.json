@@ -1,0 +1,47 @@
+{
+  "name": "angular-test-patterns",
+  "version": "0.0.1",
+  "description": "A Cut-n-Paste Guide for Testing AngularJS",
+  "keywords": [
+    "angularjs",
+    "unit test",
+    "patterns"
+  ],
+  "homepage": "https://github.com/daniellmb/angular-test-patterns",
+  "author": "Daniel Lamb (http://daniellmb.com)",
+  "maintainers": [
+    
+  ],
+  "contributors": [
+
+  ],
+  "bugs": {
+    "url": "https://github.com/daniellmb/angular-test-patterns/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daniellmb/angular-test-patterns.git"
+  },
+  "devDependencies": {
+    "coffee-script": ">=1.0.1",
+    "jasmine-node": ">=1.11.0",
+    "esprima": ">=1.0.0",
+    "coffeelint": ">=0.5.7",
+    "jshint": ">=2.1.9"
+  },
+  "scripts": {
+    "test": "npm run testRules && npm run testPatterns && npm run testExamples",
+    "testRules": "node spec/rule.tester.js",
+    "testPatterns": "node spec/pattern.tester.js",
+    "testExamples": "bash spec/testExamples.sh"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}

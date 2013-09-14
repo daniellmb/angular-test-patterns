@@ -1,0 +1,24 @@
+# package managers #
+######################
+node_modules
+npm-debug.log
+bower_components
+
+# generated test files #
+######################
+spec.coffee
+spec.js
+
+# generated coverage files #
+coverage/
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db

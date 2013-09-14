@@ -1,0 +1,7 @@
+####Unit Test Code is Lint-Free
+```CoffeeScript
+x = ->
+  return 1234 + 4567
+```
+
+

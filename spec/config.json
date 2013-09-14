@@ -1,0 +1,36 @@
+{
+  "languages": [
+    "JavaScript",
+    "CoffeeScript"
+  ],
+  "coffeelint": {
+    "arrow_spacing": {
+      "level": "error"
+    },
+    "cyclomatic_complexity": {
+      "value": 8,
+      "level": "error"
+    },
+    "no_empty_param_list": {
+      "level": "error"
+    },
+    "no_stand_alone_at": {
+      "level": "error"
+    },
+    "non_empty_constructor_needs_parens": {
+      "level": "error"
+    },
+    "indentation": {
+      "value": 2
+    },
+    "space_operators": {
+      "level": "error"
+    },
+    "no_trailing_whitespace": {
+      "level": "warn"
+    },
+    "max_line_length": {
+      "value": 100
+    }
+  }
+}

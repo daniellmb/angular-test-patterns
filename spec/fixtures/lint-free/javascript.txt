@@ -1,0 +1,8 @@
+####Unit Test Code is Lint-Free
+```JavaScript
+var x = function () {
+  return 1234 + 4567;
+};
+```
+
+

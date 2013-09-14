@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>End-to-end Test Runner</title>
+    <!-- e2e scenario test runner -->
+    <script src="../bower_components/angular-scenario/angular-scenario.js"></script>
+    <!-- scenarios to run -->
+    <script src="scenario.coffee" type="text/coffeescript"></script>
+    <!-- run CoffeeScript in the browser -->
+    <script src="coffee-script.js"></script>
+    <script>
+    setTimeout(function () {
+        // Run tests once CoffeeScript is compiled.
+        // Note: this is just to show it can be done this way.
+        // You really should pre-process your CoffeeScript.
+        angular.scenario.setUpAndRun();
+    }, 500);
+    </script>
+  </head>
+  <body></body>
+</html>

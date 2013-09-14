@@ -1,0 +1,33 @@
+{
+  "maxparams": 4,
+  "maxdepth": 2,
+  "maxstatements": 15,
+  "maxcomplexity": 8,
+  "node": true,
+  "browser": true,
+  "esnext": true,
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": true,
+  "immed": true,
+  "indent": 2,
+  "latedef": true,
+  "newcap": true,
+  "noarg": true,
+  "quotmark": "single",
+  "regexp": true,
+  "smarttabs": true,
+  "white": true,
+  "predef": {
+    "angular": false,
+    "inject": false,
+    "module": false,
+    "jasmine": true,
+    "spyOn": false,
+    "describe": false,
+    "beforeEach": false,
+    "afterEach": false,
+    "it": false,
+    "expect": false
+  }
+}
