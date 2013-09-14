@@ -24,7 +24,8 @@ describe 'My App', ->
       browser().navigateTo '#/'
   
     it 'should contain expected text', ->
-      expect(element('[ng-view] p:first').text()).toBe 'this is the home page.'
+      expect(element('[ng-view] p:first')
+        .text()).toBe 'this is the home page.'
   
 # CoffeeScript
   describe 'my view', ->
