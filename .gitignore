@@ -8,6 +8,8 @@ bower_components
 ######################
 spec.coffee
 spec.js
+scenario.coffee
+scenario.js
 
 # generated coverage files #
 coverage/
