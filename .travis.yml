@@ -4,3 +4,4 @@ node_js:
 before_script:
   - "npm i -g grunt-cli"
   - "bash init-repo.sh"
+  
