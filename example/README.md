@@ -7,6 +7,6 @@ Example applications are provided in the following languages:
 * [CoffeeScript](coffeescript)
 * [JavaScript](javascript)
 
-**Please Note:** that these examples are configured into a single file to be succinct... not maintainable. You'll want to break your aplication out into separate files and folders as needed.
+**Please Note:** that these examples are configured into a single file to be succinct... not maintainable. You'll want to break your application out into separate files and folders as needed.
 
 [Read more](../#whats-an-angularjs-test-pattern) about how test patterns are used and created.
