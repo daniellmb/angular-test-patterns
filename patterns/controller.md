@@ -39,7 +39,7 @@ describe 'Controller: myCtrl', ->
     module ($provide) ->
       $provide.value 'mySvc', new MockMySvc()
       # Make sure CoffeeScript doesn't return anything
-      return null
+      null
 
     # Inject angular constructs otherwise,
     #  you will need to inject these into each test

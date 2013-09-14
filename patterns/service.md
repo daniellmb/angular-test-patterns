@@ -36,7 +36,7 @@ describe 'Service: mySvc', ->
     module ($provide) ->
       #$provide.value 'Name', new MockName()
       # Make sure CoffeeScript doesn't return anything
-      return null
+      null
 
     # Inject in angular constructs otherwise,
     #  you would need to inject these into each test

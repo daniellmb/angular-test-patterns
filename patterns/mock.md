@@ -20,7 +20,7 @@ beforeEach ->
   module ($provide) ->
     $provide.value 'Name', new MockName()
     # Make sure CoffeeScript doesn't return anything
-    return null
+    null
     
   # ...
 ```
