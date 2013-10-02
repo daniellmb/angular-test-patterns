@@ -1,6 +1,6 @@
 # Angular Test Patterns [![Build Status](https://api.travis-ci.org/daniellmb/angular-test-patterns.png)](https://travis-ci.org/daniellmb/angular-test-patterns) [![Dependency Status](https://gemnasium.com/daniellmb/angular-test-patterns.png)](https://gemnasium.com/daniellmb/angular-test-patterns#tab-dev_dependencies)
 
-High Quality Cut-n-Paste Guide for Testing your AngularJS [Controllers](patterns/controller.md), [Services](patterns/service.md), [Constants](patterns/constant.md), [Directives](patterns/directive.md) and [Filters](patterns/filter.md). As well as ideas on how to use [Mocks](patterns/mock.md), [End-to-End](patterns/e2e.md) tests, [Performance](patterns/performance.md) testing and [More](patterns/perceptualdiff.md)!
+High Quality Cut-n-Paste Guide for Testing your AngularJS [Controllers](patterns/controller.md), [Services](patterns/service.md), [Constants](patterns/constant.md), [Directives](patterns/directive.md) and [Filters](patterns/filter.md). As well as ideas on how to use [Mocks](patterns/mock.md), [End-to-End](patterns/e2e.md) tests, [Performance Testing](patterns/performance.md), [A/B Testing](patterns/ab.md) and [More](patterns/perceptualdiff.md)!
 
 ## Testing Patterns
 

@@ -1,4 +1,4 @@
-## A / Testing AngularJS
+## A / B Testing AngularJS
 
 You have goals that you want your visitors to accomplish (e.g., make a purchase, sign up for a newsletter) or metrics you want to improve (e.g., revenue, visit duration, bounce rate). A/B testing lets you test which version leads to the greatest improvement. 
 
