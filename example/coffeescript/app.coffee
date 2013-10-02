@@ -136,3 +136,12 @@ angular.module('myApp')
   # return public API
   getAPI()
 ]
+
+###
+Application Constants
+----------------------
+###
+
+# Define My Constant
+angular.module('myApp')
+.constant 'myConst', 42
