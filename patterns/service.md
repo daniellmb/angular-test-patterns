@@ -8,7 +8,7 @@
   * [Array](#provide-a-myarray-property-)
   * [Boolean](#provide-a-myboolean-property-)
   * [Date](#provide-a-mydate-property-)
-  * [Method](#provide-a-mymethod-property-)
+  * [Method](#provide-a-mymethod-function-)
   * [Null](#provide-a-mynull-property-)
   * [Number](#provide-a-mynumber-property-)
   * [Object](#provide-a-myobject-property-)
@@ -144,7 +144,7 @@ it('should provide a myDate property', function () {
 # CoffeeScript
 it 'should provide a myMethod function', ->
   expect(typeof mySvc.myMethod).toBe 'function'
-```
+````
 
 ```JavaScript
 // JavaScript
