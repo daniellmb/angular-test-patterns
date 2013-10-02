@@ -4,17 +4,17 @@
 
 * [Suggested Setup](#suggested-service-unit-test-setup-)
 * Data type test patterns
-  * [Anything](#provide-mything-to-the-scope-)
-  * [Array](#provide-myarray-to-the-scope-)
-  * [Boolean](#provide-myboolean-to-the-scope-)
-  * [Date](#provide-mydate-to-the-scope-)
-  * [Method](#provide-mymethod-to-the-scope-)
-  * [Null](#provide-mynull-to-the-scope-)
-  * [Number](#provide-mynumber-to-the-scope-)
-  * [Object](#provide-myobject-to-the-scope-)
-  * [RegExp](#provide-myregexp-to-the-scope-)
-  * [String](#provide-mystring-to-the-scope-)
-  * [Undefined](#expect-myundefined-to-be-undefined-)
+  * [Anything](#provide-a-mything-property-)
+  * [Array](#provide-a-myarray-property-)
+  * [Boolean](#provide-a-myboolean-property-)
+  * [Date](#provide-a-mydate-property-)
+  * [Method](#provide-a-mymethod-property-)
+  * [Null](#provide-a-mynull-property-)
+  * [Number](#provide-a-mynumber-property-)
+  * [Object](#provide-a-myobject-property-)
+  * [RegExp](#provide-a-myregexp-property-)
+  * [String](#provide-a-mystring-property-)
+  * [Undefined](#expect-a-myundefined-to-be-undefined-)
 * Method use
   * [should return expected value](#mymethod-should-return-expected-value-)
 * Have a good pattern?
