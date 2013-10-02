@@ -1,7 +1,7 @@
 {
   "name": "angular-test-patterns",
   "version": "0.0.1",
-  "description": "A Cut-n-Paste Guide for Testing AngularJS",
+  "description": "High Quality Guide for Testing AngularJS",
   "keywords": [
     "angularjs",
     "unit test",
