@@ -81,6 +81,7 @@ angular.module('myApp')
     return {
       template: '<div></div>',
       restrict: 'EAC',
+      require: 'ngModel',
       link: function (scope, element, attrs) {
         return element.text('this is my directive');
       }

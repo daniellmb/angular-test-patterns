@@ -76,6 +76,7 @@ angular.module('myApp')
 .directive 'myDir', [ ->
   template: '<div></div>'
   restrict: 'EAC'
+  require: 'ngModel'
   link: (scope, element, attrs) ->
     element.text 'this is my directive'
 ]

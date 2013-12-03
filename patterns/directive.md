@@ -4,6 +4,7 @@
 
 * [Suggested Setup](#suggested-directive-unit-test-setup-)
 * When created
+  * [should throw error when ngModel attribute not defined](#throw-error-when-ngmodel-attribute-not-defined-)
   * [should render the expected output](#render-the-expected-output-)
 * When the model changes
   * *[pull request welcome!](../#contributing-test-patterns)*
@@ -119,6 +120,25 @@ describe('Directive: myDir', function () {
 ```
 
 #### My directive should:
+
+#####throw error when ngModel attribute not defined [&#8593;](#testing-patterns)
+```CoffeeScript
+# CoffeeScript
+it 'should throw error when ngModel attribute not defined', ->
+  invalidTemplate = ->
+    createDirective null, '<my-dir></my-dir>'
+  expect(invalidTemplate).toThrow new Error('No controller: ngModel')
+```
+
+```JavaScript
+// JavaScript
+it('should throw error when ngModel attribute not defined', function () {
+  function invalidTemplate() {
+    createDirective(null, '<my-dir></my-dir>');
+  }
+  expect(invalidTemplate).toThrow(new Error('No controller: ngModel'));
+});
+```
 
 #####render the expected output [&#8593;](#testing-patterns)
 ```CoffeeScript
