@@ -1,4 +1,4 @@
-require('coffee-script');
+require('coffee-script/register');
 var util = require('./lib/tester.util');
 
 //find specs

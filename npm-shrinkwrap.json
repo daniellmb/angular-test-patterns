@@ -1,0 +1,274 @@
+{
+  "name": "angular-test-patterns",
+  "version": "0.0.2",
+  "dependencies": {
+    "esprima": {
+      "version": "1.0.4",
+      "from": "esprima@latest"
+    },
+    "coffee-script": {
+      "version": "1.7.1",
+      "from": "coffee-script@latest",
+      "dependencies": {
+        "mkdirp": {
+          "version": "0.3.5",
+          "from": "mkdirp@~0.3.5"
+        }
+      }
+    },
+    "coffeelint": {
+      "version": "1.1.0",
+      "from": "coffeelint@latest",
+      "dependencies": {
+        "optimist": {
+          "version": "0.6.1",
+          "from": "optimist@>=0.2.8",
+          "dependencies": {
+            "wordwrap": {
+              "version": "0.0.2",
+              "from": "wordwrap@~0.0.2"
+            },
+            "minimist": {
+              "version": "0.0.8",
+              "from": "minimist@~0.0.1"
+            }
+          }
+        },
+        "glob": {
+          "version": "3.2.9",
+          "from": "glob@>=3.1.9",
+          "dependencies": {
+            "minimatch": {
+              "version": "0.2.14",
+              "from": "minimatch@0.x.x",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.5.0",
+                  "from": "lru-cache@2"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0"
+                }
+              }
+            },
+            "inherits": {
+              "version": "2.0.1",
+              "from": "inherits@2"
+            }
+          }
+        }
+      }
+    },
+    "jshint": {
+      "version": "2.4.4",
+      "from": "jshint@latest",
+      "dependencies": {
+        "shelljs": {
+          "version": "0.1.4",
+          "from": "shelljs@0.1.x"
+        },
+        "underscore": {
+          "version": "1.4.4",
+          "from": "underscore@1.4.x"
+        },
+        "cli": {
+          "version": "0.4.5",
+          "from": "cli@0.4.x",
+          "dependencies": {
+            "glob": {
+              "version": "3.2.9",
+              "from": "glob@>= 3.1.4",
+              "dependencies": {
+                "inherits": {
+                  "version": "2.0.1",
+                  "from": "inherits@2"
+                }
+              }
+            }
+          }
+        },
+        "minimatch": {
+          "version": "0.2.14",
+          "from": "minimatch@0.x.x",
+          "dependencies": {
+            "lru-cache": {
+              "version": "2.5.0",
+              "from": "lru-cache@2"
+            },
+            "sigmund": {
+              "version": "1.0.0",
+              "from": "sigmund@~1.0.0"
+            }
+          }
+        },
+        "htmlparser2": {
+          "version": "3.3.0",
+          "from": "htmlparser2@3.3.x",
+          "dependencies": {
+            "domhandler": {
+              "version": "2.1.0",
+              "from": "domhandler@2.1"
+            },
+            "domutils": {
+              "version": "1.1.6",
+              "from": "domutils@1.1"
+            },
+            "domelementtype": {
+              "version": "1.1.1",
+              "from": "domelementtype@1"
+            },
+            "readable-stream": {
+              "version": "1.0.26-2",
+              "from": "readable-stream@1.0",
+              "dependencies": {
+                "string_decoder": {
+                  "version": "0.10.25-1",
+                  "from": "string_decoder@~0.10.x"
+                }
+              }
+            }
+          }
+        },
+        "console-browserify": {
+          "version": "0.1.6",
+          "from": "console-browserify@0.1.x"
+        },
+        "exit": {
+          "version": "0.1.2",
+          "from": "exit@0.1.x"
+        }
+      }
+    },
+    "grunt-cli": {
+      "version": "0.1.13",
+      "from": "grunt-cli@latest",
+      "dependencies": {
+        "nopt": {
+          "version": "1.0.10",
+          "from": "nopt@~1.0.10",
+          "dependencies": {
+            "abbrev": {
+              "version": "1.0.4",
+              "from": "abbrev@1"
+            }
+          }
+        },
+        "findup-sync": {
+          "version": "0.1.2",
+          "from": "findup-sync@~0.1.0",
+          "dependencies": {
+            "glob": {
+              "version": "3.1.21",
+              "from": "glob@~3.1.21",
+              "dependencies": {
+                "minimatch": {
+                  "version": "0.2.14",
+                  "from": "minimatch@0.x.x",
+                  "dependencies": {
+                    "lru-cache": {
+                      "version": "2.5.0",
+                      "from": "lru-cache@2"
+                    },
+                    "sigmund": {
+                      "version": "1.0.0",
+                      "from": "sigmund@~1.0.0"
+                    }
+                  }
+                },
+                "graceful-fs": {
+                  "version": "1.2.3",
+                  "from": "graceful-fs@~1.2.0"
+                },
+                "inherits": {
+                  "version": "1.0.0",
+                  "from": "inherits@1"
+                }
+              }
+            },
+            "lodash": {
+              "version": "1.0.1",
+              "from": "lodash@~1.0.1"
+            }
+          }
+        },
+        "resolve": {
+          "version": "0.3.1",
+          "from": "resolve@~0.3.1"
+        }
+      }
+    },
+    "jasmine-node": {
+      "version": "1.13.1",
+      "from": "jasmine-node@latest",
+      "dependencies": {
+        "jasmine-reporters": {
+          "version": "0.2.1",
+          "from": "jasmine-reporters@>=0.2.0"
+        },
+        "jasmine-growl-reporter": {
+          "version": "0.0.2",
+          "from": "jasmine-growl-reporter@~0.0.2",
+          "dependencies": {
+            "growl": {
+              "version": "1.7.0",
+              "from": "growl@~1.7.0"
+            }
+          }
+        },
+        "requirejs": {
+          "version": "2.1.11",
+          "from": "requirejs@>=0.27.1"
+        },
+        "walkdir": {
+          "version": "0.0.7",
+          "from": "walkdir@>= 0.0.1"
+        },
+        "underscore": {
+          "version": "1.6.0",
+          "from": "underscore@>= 1.3.1"
+        },
+        "gaze": {
+          "version": "0.3.4",
+          "from": "gaze@~0.3.2",
+          "dependencies": {
+            "minimatch": {
+              "version": "0.2.14",
+              "from": "minimatch@~0.2.11",
+              "dependencies": {
+                "lru-cache": {
+                  "version": "2.5.0",
+                  "from": "lru-cache@2"
+                },
+                "sigmund": {
+                  "version": "1.0.0",
+                  "from": "sigmund@~1.0.0"
+                }
+              }
+            },
+            "fileset": {
+              "version": "0.1.5",
+              "from": "fileset@~0.1.5",
+              "dependencies": {
+                "glob": {
+                  "version": "3.2.9",
+                  "from": "glob@3.x",
+                  "dependencies": {
+                    "inherits": {
+                      "version": "2.0.1",
+                      "from": "inherits@2"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "mkdirp": {
+          "version": "0.3.5",
+          "from": "mkdirp@~0.3.5"
+        }
+      }
+    }
+  }
+}

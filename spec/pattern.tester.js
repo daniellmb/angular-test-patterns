@@ -1,4 +1,4 @@
-require('coffee-script');
+require('coffee-script/register');
 var fs = require('fs');
 var path = require('path');
 var util = require('./lib/tester.util');

@@ -1,6 +1,6 @@
 {
   "name": "angular-test-patterns",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "High Quality Guide for Testing AngularJS",
   "keywords": [
     "angularjs",
@@ -29,11 +29,12 @@
     "url": "git://github.com/daniellmb/angular-test-patterns.git"
   },
   "devDependencies": {
-    "coffee-script": ">=1.0.1",
-    "jasmine-node": ">=1.11.0",
-    "esprima": ">=1.0.0",
-    "coffeelint": ">=0.5.7",
-    "jshint": ">=2.1.9"
+    "coffee-script": "latest",
+    "jasmine-node": "latest",
+    "esprima": "latest",
+    "coffeelint": "latest",
+    "jshint": "latest",
+    "grunt-cli": "latest"
   },
   "scripts": {
     "test": "npm run testRules && npm run testPatterns && npm run testExamples",
