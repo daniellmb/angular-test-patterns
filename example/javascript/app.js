@@ -15,6 +15,7 @@ Declare module dependencies and routes, then create and configure the app.
 
 // Declare module dependencies
 var dependencies = [
+  'ngRoute',
   'ngSanitize'
 ];
 

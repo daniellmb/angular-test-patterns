@@ -6,13 +6,14 @@ module.exports = (config) ->
     # list of files / patterns to load in the browser
     files: [
       # app deps
-      '../bower_components/angular/angular.js',
-      '../bower_components/angular-mocks/angular-mocks.js',
-      '../bower_components/angular-sanitize/angular-sanitize.js',
+      '../bower_components/angular/angular.js'
+      '../bower_components/angular-route/angular-route.js'
+      '../bower_components/angular-mocks/angular-mocks.js'
+      '../bower_components/angular-sanitize/angular-sanitize.js'
       # app code
-      'app.coffee',
+      'app.coffee'
       # mocks
-      'mock.coffee',
+      'mock.coffee'
       # generated specs to run
       'spec.coffee'
     ]

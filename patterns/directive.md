@@ -127,7 +127,9 @@ describe('Directive: myDir', function () {
 it 'should throw error when ngModel attribute not defined', ->
   invalidTemplate = ->
     createDirective null, '<my-dir></my-dir>'
-  expect(invalidTemplate).toThrow new Error('No controller: ngModel')
+    # Note: older versions of Angular throw this error as: 'No controller: ngModel'
+    # More recently it is: Controller 'ngModel', required by directive 'myDir', can't be found!
+    expect(invalidTemplate).toThrow()
 ```
 
 ```JavaScript
@@ -136,7 +138,9 @@ it('should throw error when ngModel attribute not defined', function () {
   function invalidTemplate() {
     createDirective(null, '<my-dir></my-dir>');
   }
-  expect(invalidTemplate).toThrow(new Error('No controller: ngModel'));
+  // Note: older versions of Angular throw this error as: 'No controller: ngModel'
+  // More recently it is: Controller 'ngModel', required by directive 'myDir', can't be found!
+  expect(invalidTemplate).toThrow();
 });
 ```
 

@@ -30,7 +30,7 @@ module.exports = function (grunt) {
           // http://en.wikipedia.org/wiki/Cyclomatic_complexity
           cyclomatic: 8,
           // http://en.wikipedia.org/wiki/Halstead_complexity_measures
-          halstead: 8,
+          halstead: 9,
           maintainability: 100
         }
       }
