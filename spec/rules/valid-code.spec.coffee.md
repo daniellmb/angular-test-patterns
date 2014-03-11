@@ -22,7 +22,7 @@ This rule uses the [isCodeValid](../lib/rule.util.coffee.md#block-code-is-valid)
     'use strict'
     util = require('../lib/rule.util')
     getCode = (lang) ->
-        util.getCode "code-comment/#{lang}"
+        util.getCode "valid-code/#{lang}"
 ```
 
 Define rule acceptance tests.

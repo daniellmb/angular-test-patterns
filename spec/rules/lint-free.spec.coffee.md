@@ -25,7 +25,7 @@ This rule uses the [isCodeLintFree](../lib/rule.util.coffee.md#block-code-lint-f
     'use strict'
     util = require('../lib/rule.util')
     getCode = (lang) ->
-        util.getCode "code-comment/#{lang}"
+        util.getCode "lint-free/#{lang}"
 ```
 
 Define rule acceptance tests.
