@@ -113,47 +113,49 @@ separate functions encurages simple methods that have a single purpose.
 */
 
 angular.module('myApp')
-.factory('mySvc', [function () {
-    var exportMyMethod, getAPI;
-    
-    /*
-    Adds public myMethod to the api
-    */
-    exportMyMethod = function (api) {
-      api.myMethod = function () {
-        return 'Not implemented';
-      };
-    };
+.factory('mySvc', function factoryInit(myVal) {
 
-    /*
-    Builds the public API for this factory
-    */
-    getAPI = function () {
-      // export public properties
-      var publicAPI = {
-        myThing: {},
-        myArray: [],
-        myBoolean: true,
-        myDate: new Date(),
-        myNull: null,
-        myNumber: 1337,
-        myObject: {},
-        myRegExp: /\s/,
-        myString: 'test',
-        myUndefined: undefined
-      };
-
-      // add public methods
-      exportMyMethod(publicAPI);
-
-      // return api
-      return publicAPI;
-    };
-
-    // return public API
-    return getAPI();
+  // check for required dependency
+  if (!myVal) {
+    throw new Error('mySvc: myVal not provided');
   }
-]);
+
+  /*
+  Adds public myMethod to the api
+  */
+  function exportMyMethod(api) {
+    api.myMethod = function () {
+      return 'Not implemented';
+    };
+  }
+
+  function getAPI() {
+    // export public properties
+    var publicAPI = {
+      myThing: {},
+      myArray: [],
+      myBoolean: true,
+      myDate: new Date(),
+      myNull: null,
+      myNumber: 1337,
+      myObject: {},
+      myRegExp: /\s/,
+      myString: 'test',
+      myUndefined: undefined
+    };
+
+    // add public methods
+    exportMyMethod(publicAPI);
+
+    // return api
+    return publicAPI;
+  }
+
+  //return public API
+  return getAPI();
+})
+// 'provide' global variable dependency (so it can be mocked)
+.value('myVal', window.myVal);
 
 /*
 Application Constants

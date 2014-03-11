@@ -104,7 +104,11 @@ separate functions encurages simple methods that have a single purpose.
 
 # Define My Service
 angular.module('myApp')
-.factory 'mySvc', [ ->
+.factory('mySvc', (myVal) ->
+
+  # check for required dependency
+  throw new Error('mySvc: myVal not provided') unless myVal
+
   ###
   Adds public myMethod to the api
   ###
@@ -137,7 +141,9 @@ angular.module('myApp')
 
   # return public API
   getAPI()
-]
+)
+# 'provide' global variable dependency (so it can be mocked)
+.value 'myVal', window.myVal
 
 ###
 Application Constants
