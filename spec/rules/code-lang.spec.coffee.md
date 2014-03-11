@@ -20,7 +20,7 @@ This rule uses the [isSupported](../lib/rule.util.coffee.md#block-language-is-su
     'use strict'
     util = require('../lib/rule.util')
     getCode = (lang) ->
-        util.getCode "code-comment/#{lang}"
+        util.getCode "code-lang/#{lang}"
 ```
 
 Define rule acceptance tests.
