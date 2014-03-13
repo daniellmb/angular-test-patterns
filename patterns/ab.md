@@ -9,7 +9,7 @@ You have goals that you want your visitors to accomplish (e.g., make a purchase,
 * Call to action
 * Layout
 
-This is something I haven't done in AngularJS yet, so I'm looking for community input on what works well. My current thought is to leverage existing tools such as the Google Analytics [Experiments API](https://developers.google.com/analytics/devguides/platform/features/experiments-overview).
+This is something I'm working on right now... coming soon, for a sneak peak check out [ab.js](https://github.com/daniellmb/ab.js) and [ab-test-service](https://github.com/daniellmb/ab-test-service).
 
 ### What is working well for you?
 
