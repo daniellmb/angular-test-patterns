@@ -69,12 +69,12 @@ To ensure a clear and consistent style of test patterns, every block of code mus
 * Commit your changes and create a descriptive commit message (the commit message is used to generate release notes, please check out the [commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y) and the commit message presubmit hook [validate-commit-msg.js](hooks/validate-commit-msg.js)): `git commit -a`
 * Push your branch to Github: `git push origin my-fix-branch`
 * In Github, send a pull request to `daniellmb:master`
+* If you need to make changes to your pull request, you can update the commit with `git commit --amend`. Then, update the pull request with `git push -f`.
 * When the patch is reviewed and merged, delete your branch and pull yours — and other — changes from the main (upstream) repository:
    * Delete your branch in Github, run: `git push origin :my-fix-branch`
    * Check out the master branch, run: `git checkout master`
    * Delete your local branch, run: `git branch -D my-fix-branch`
    * Update your master with the latest upstream version, run: `git pull --ff upstream master`
-* If you need to make changes to your pull request, you can update the commit with `git commit --amend`. Then, update the pull request with `git push -f`.
 
 That's it! Thank you for your contribution!
 
