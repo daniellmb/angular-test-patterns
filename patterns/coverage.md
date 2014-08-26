@@ -92,6 +92,41 @@ grunt.registerTask('test', [
 ```
 
 
-### CoffeeScript
+####CoffeeScript
 
-Unfortunately karma-coverage [doesn't support CoffeeScript yet](https://github.com/karma-runner/karma-coverage/pull/12), but it's only a pull request away if you have the time to implement it *hint hint* :) 
+pattern(coverage): update for CoffeeScript
+
+karma-coverage now fully supports CoffeeScript.
+
+```JavaScript
+// JavaScript
+config.set({
+  files: [
+    'src/**/*.coffee',
+    'test/**/*.coffee'
+  ],
+  // coverage reporter generates the coverage
+  reporters: ['progress', 'coverage'],
+  preprocessors: {
+    // source files, that you wanna generate coverage for
+    // do not include tests or libraries
+    // (these files will be instrumented by Istanbul via Ibrik unless
+    // specified otherwise in coverageReporter.instrumenter)
+    'src/*.coffee': ['coverage'],
+    // note: project files will already be converted to
+    // JavaScript via coverage preprocessor.
+    // Thus, you'll have to limit the CoffeeScript preprocessor
+    // to uncovered files.
+    'test/**/*.coffee': ['coffee']
+  },
+  // configure coverage reporter
+  coverageReporter: {
+    // change to html if you need details
+    //type: 'html',
+    type: 'text-summary',
+    dir: 'coverage/'
+  }
+});
+ ```
+
+
