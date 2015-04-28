@@ -27,6 +27,12 @@ function config($routeProvider) {
     templateUrl: '../views/home.html',
     controller: 'myCtrl'
   })
+  .when('/home2', {
+    // Use the same partial views for all languages
+    templateUrl: '../views/home2.html',
+    controller: 'myCtrl2',
+    controllerAs: 'ctrl'
+  })
   .when('/about', {
     // Use the same partial views for all languages
     templateUrl: '../views/about.html'
@@ -70,6 +76,29 @@ function ($scope, $http, mySvc) {
   // Call service method
   mySvc.myMethod({});
 }]);
+
+// Define My Controller As
+angular.module('myApp')
+.controller('myCtrl2', ['$http', 'mySvc',
+function ($http, mySvc) {
+  // Attach data types
+  this.myThing = {};
+  this.myArray = [];
+  this.myBoolean = true;
+  this.myDate = new Date();
+  this.myMethod = function () {
+    return 'Not implemented';
+  };
+  this.myNull = null;
+  this.myNumber = 1337;
+  this.myObject = {};
+  this.myRegExp = /\s/;
+  this.myString = 'test';
+  this.myUndefined = undefined;
+  // Call service method
+  mySvc.myMethod({});
+}]);
+
 
 /*
 Application Directives
