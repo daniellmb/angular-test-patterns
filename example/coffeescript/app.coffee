@@ -26,6 +26,11 @@ config = ($routeProvider) ->
     # Use the same partial views for for all languages
     templateUrl: '../views/home.html'
     controller: 'myCtrl'
+  .when '/home2',
+    # Use the same partial views for for all languages
+    templateUrl: '../views/home2.html'
+    controller: 'myCtrl2'
+    controllerAs: 'ctrl'
   .when '/about',
     # Use the same partial views for for all languages
     templateUrl: '../views/about.html'
@@ -63,6 +68,28 @@ angular.module('myApp')
   $scope.myRegExp = /\s/
   $scope.myString = 'test'
   $scope.myUndefined = undefined
+  # Call service method
+  mySvc.myMethod({})
+]
+
+# Define My Controller As
+angular.module('myApp')
+.controller 'myCtrl2',
+['$http', 'mySvc',
+($http, mySvc) ->
+  # Attach data types
+  this.myThing = {}
+  this.myArray = []
+  this.myBoolean = yes
+  this.myDate = new Date()
+  this.myMethod = ->
+    'Not implemented'
+  this.myNull = null
+  this.myNumber = 1337
+  this.myObject = {}
+  this.myRegExp = /\s/
+  this.myString = 'test'
+  this.myUndefined = undefined
   # Call service method
   mySvc.myMethod({})
 ]
