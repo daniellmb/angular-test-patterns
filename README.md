@@ -6,6 +6,7 @@ High Quality Cut-n-Paste Guide for Testing your AngularJS [Controllers](patterns
 
 * Unit Testing
   * [Controllers](patterns/controller.md#unit-testing-angularjs-controllers)
+  * [Controllers](patterns/controllerAs.md#unit-testing-angularjs-controllers)
   * [Directives](patterns/directive.md#unit-testing-angularjs-directives)
   * [Filters](patterns/filter.md#unit-testing-angularjs-filters)
   * [Services](patterns/service.md#unit-testing-angularjs-services)
