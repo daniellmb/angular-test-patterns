@@ -105,13 +105,13 @@ describe('Controller: myCtrl2 as ctrl', function () {
 #####attach `myThing` to the scope [&#8593;](#testing-patterns)
 ```CoffeeScript
 # CoffeeScript
-it 'should define a myThing property1', ->
+it 'should define a myThing property', ->
   expect(scope.ctrl.myThing).toBeDefined()
 ```
 
 ```JavaScript
 // JavaScript
-it('should define a myThing property1', function () {
+it('should define a myThing property', function () {
   expect(scope.ctrl.myThing).toBeDefined();
 });
 ```
