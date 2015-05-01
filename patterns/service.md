@@ -19,7 +19,8 @@
   * [should return expected value](#mymethod-should-return-expected-value-)
   
 * Mock $http calls  
-  * [should make $http call and return value](#getdata-should-make-$http-call-and-return-value-)
+  * [should make $http call and return value](#getData-should-make-$http-call-and-return-value-)
+  
 * Have a good pattern?
   * *[pull request welcome!](../#contributing-test-patterns)*
 
