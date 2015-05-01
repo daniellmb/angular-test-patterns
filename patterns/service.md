@@ -372,7 +372,7 @@ it 'getData should return make $http call', ->
 
 ```JavaScript
 // JavaScript
-it('getData should make http call', function () {
+it('getData should make $http call', function () {
   var data;
 
   //given
