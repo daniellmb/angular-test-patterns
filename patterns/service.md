@@ -19,7 +19,7 @@
   * [should return expected value](#mymethod-should-return-expected-value-)
   
 * Mock $http calls  
-  * [should make $http call and return value](#getData-should-make-$http-call-and-return-value-)
+  * [should make $http call and return value](#getData-should-make-http-call-and-return-value-)
   
 * Have a good pattern?
   * *[pull request welcome!](../#contributing-test-patterns)*
@@ -343,7 +343,7 @@ it('myMethod should return expected value', function () {
 });
 ```
 
-#####`getData` should make $http call and return value [&#8593;](#testing-patterns)
+#####`getData` should make http call and return value [&#8593;](#testing-patterns)
 ```CoffeeScript
 # CoffeeScript
 it 'getData should return make $http call', ->
@@ -372,7 +372,7 @@ it 'getData should return make $http call', ->
 
 ```JavaScript
 // JavaScript
-it('getData should make $http call', function () {
+it('getData should make http call', function () {
   var data;
 
   //given
