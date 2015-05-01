@@ -17,6 +17,9 @@
   * [Undefined](#expect-a-myundefined-to-be-undefined-)
 * Method use
   * [should return expected value](#mymethod-should-return-expected-value-)
+  
+* Mock $http calls  
+  * [should make $http call and return value](#getdata-should-make-$http-call-and-return-value-)
 * Have a good pattern?
   * *[pull request welcome!](../#contributing-test-patterns)*
 
@@ -27,6 +30,8 @@
 # CoffeeScript
 describe 'Service: mySvc', ->
   mySvc = null
+  httpBackend = null
+  mockData = null
     
   # Use to provide any mocks needed
   _provide = (callback) ->
@@ -38,8 +43,16 @@ describe 'Service: mySvc', ->
 
   # Use to inject the code under test
   _inject = ->
-    inject (_mySvc_) ->
+    inject (_mySvc_, $httpBackend, _mockData_) ->
       mySvc = _mySvc_
+      httpBackend = $httpBackend
+      mockData = _mockData_
+
+  # make sure no expectations were missed in your tests.
+  # (e.g. expectGET or expectPOST)
+  afterEach ->
+    httpBackend.verifyNoOutstandingExpectation()
+    httpBackend.verifyNoOutstandingRequest()
 
   # Call this before each test, except where you are testing for errors
   _setup = ->
@@ -52,7 +65,7 @@ describe 'Service: mySvc', ->
 
   beforeEach ->
     # Load the service's module
-    module 'myApp'
+    module 'myApp','myApp.mockData'
 
   describe 'the service api', ->
     beforeEach ->
@@ -82,7 +95,7 @@ describe 'Service: mySvc', ->
 ```JavaScript
 // JavaScript
 describe('Service: mySvc', function () {
-  var mySvc;
+  var mySvc, httpBackend, mockData;
 
   // Use to provide any mocks needed
   function _provide(callback) {
@@ -94,8 +107,10 @@ describe('Service: mySvc', function () {
 
   // Use to inject the code under test
   function _inject() {
-    inject(function (_mySvc_) {
+    inject(function (_mySvc_, $httpBackend, _mockData_) {
       mySvc = _mySvc_;
+      httpBackend = $httpBackend;
+      mockData = _mockData_;
     });
   }
 
@@ -112,7 +127,14 @@ describe('Service: mySvc', function () {
 
   beforeEach(function () {
     // Load the service's module
-    module('myApp');
+    module('myApp', 'myApp.mockData');
+  });
+
+  // make sure no expectations were missed in your tests.
+  // (e.g. expectGET or expectPOST)
+  afterEach(function () {
+    httpBackend.verifyNoOutstandingExpectation();
+    httpBackend.verifyNoOutstandingRequest();
   });
 
   describe('the service api', function () {
@@ -317,6 +339,53 @@ it 'myMethod should return expected value', ->
 it('myMethod should return expected value', function () {
   var result = mySvc.myMethod();
   expect(result).toBe('Not implemented');
+});
+```
+
+#####`getData` should make $http call and return value [&#8593;](#testing-patterns)
+```CoffeeScript
+# CoffeeScript
+it 'getData should return make $http call', ->
+  data = null
+
+  #given
+  httpBackend.whenGET 'http://www.mocky.io/v2/553e0de62f711b7b1aa5d24f'
+  .respond(mockData)
+
+  #when
+  mySvc.getData()
+  .then (response) ->
+    data = response.data
+  
+  httpBackend.flush()
+
+  #then
+  expect(data.map( (elm) ->
+    elm.first_name
+  )).toEqual mockData.data.map( (elm) ->
+    elm.first_name
+  )
+
+
+```
+
+```JavaScript
+// JavaScript
+it('getData should make $http call', function () {
+  var data;
+
+  //given
+  httpBackend.whenGET('http://www.mocky.io/v2/553e0de62f711b7b1aa5d24f').respond(mockData);
+
+  //when
+  mySvc.getData().then(function (response) {
+    data = response.data;
+  });
+
+  httpBackend.flush();
+
+  //then
+  expect(data.map(function (elm) {return elm.first_name; })).toEqual(mockData.data.map(function (elm) {return elm.first_name; }));
 });
 ```
 
