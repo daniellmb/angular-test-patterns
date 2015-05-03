@@ -145,8 +145,6 @@ angular.module('myApp')
     api.getData = ->
       $http.get 'http://www.mocky.io/v2/553e0de62f711b7b1aa5d24f'
             .then ( (response) -> response.data )
-            .catch ( (error) -> console.log('XHR Failed.' + error.data))
-
   ###
   Builds the public API for this factory
   ###
