@@ -131,7 +131,7 @@ separate functions encurages simple methods that have a single purpose.
 
 # Define My Service
 angular.module('myApp')
-.factory('mySvc', (myVal) ->
+.factory('mySvc', (myVal, $http) ->
 
   # check for required dependency
   throw new Error('mySvc: myVal not provided') unless myVal
@@ -142,7 +142,9 @@ angular.module('myApp')
   exportMyMethod = (api) ->
     api.myMethod = ->
       'Not implemented'
-
+    api.getData = ->
+      $http.get 'http://www.mocky.io/v2/553e0de62f711b7b1aa5d24f'
+            .then ( (response) -> response.data )
   ###
   Builds the public API for this factory
   ###

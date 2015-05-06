@@ -10,6 +10,8 @@ module.exports = (config) ->
       '../bower_components/angular-route/angular-route.js'
       '../bower_components/angular-mocks/angular-mocks.js'
       '../bower_components/angular-sanitize/angular-sanitize.js'
+      #mockData
+      '../../spec/mockData.js'
       # app code
       'app.coffee'
       # mocks
