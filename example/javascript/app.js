@@ -119,6 +119,22 @@ angular.module('myApp')
   }
 ]);
 
+// Define My Directive
+angular.module('myApp')
+.directive('myDir2', [function () {
+    return {
+      template: '<div></div>',
+      restrict: 'EAC',
+      scope: {
+        data: '='
+      },
+      link: function (scope, element, attrs) {
+        return element.text('this is my directive');
+      }
+    };
+  }
+]);
+
 /**
 Application Filters
 ----------------------

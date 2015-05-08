@@ -109,6 +109,18 @@ angular.module('myApp')
     element.text 'this is my directive'
 ]
 
+# Define My Directive
+angular.module('myApp')
+.directive 'myDir2', [ ->
+  template: '<div></div>'
+  restrict: 'EAC'
+  scope: {
+    data: '='
+  }
+  link: (scope, element, attrs) ->
+    element.text 'this is my directive'
+]
+
 ###
 Application Filters
 ----------------------
