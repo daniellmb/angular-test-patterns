@@ -4,7 +4,7 @@
 
 * [Suggested Setup](#suggested-directive-unit-test-setup-)
 * When created
-  * [should have expexted isolated scope](#should-have-expexted-isolated-scope-)
+  * [should have expected isolated scope](#should-have-expected-isolated-scope-)
 * When the model changes
   * *[pull request welcome!](../#contributing-test-patterns)*
 * when destroyed
@@ -121,7 +121,7 @@ describe('Directive: myDir2', function () {
 #### My directive should:
 
 
-#####should have expexted isolated scope [&#8593;](#testing-patterns)
+#####should have expected isolated scope [&#8593;](#testing-patterns)
 ```CoffeeScript
 # CoffeeScript
 it 'should have expected isolated scope', ->
