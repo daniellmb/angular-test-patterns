@@ -1,4 +1,4 @@
-## Unit Testing AngularJS Directives
+## Unit Testing AngularJS Isolate Directives
 
 ##### Testing Patterns
 
