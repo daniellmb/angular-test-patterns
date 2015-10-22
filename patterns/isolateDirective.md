@@ -21,7 +21,7 @@ describe 'Directive: myDir2', ->
 
   createDirective = (data, template) ->
     # Setup scope state
-    scope.someData = data
+    scope.data = data or defaultData
 
     # Create directive
     elm = compile(template or validTemplate) scope
@@ -71,7 +71,7 @@ describe('Directive: myDir2', function () {
     var elm;
     
     // Setup scope state
-    scope.someData = data;
+    scope.data = data || defaultData;
 
     // Create directive
     elm = compile(template || validTemplate)(scope);
