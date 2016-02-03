@@ -4,6 +4,7 @@
 
 * [Angular Scenario](#angular-scenario-)
 * [Protractor](#protractor-)
+* [Minium](#minium-)
 
 ### Angular Scenario [&#8593;](#end-to-end-testing-frameworks)
 
@@ -191,6 +192,14 @@ describe('my view', function () {
 
 
 ---
+
+### Minium [&#8593;](#end-to-end-testing-frameworks)
+
+* [Minium](http://minium.vilt.io/) is an end to end test framework for web applications built on top of [Selenium](http://www.seleniumhq.org/) with an easy syntax and an interactive editor.
+
+#### Getting started
+
+* There is a [quick start guide](http://minium.vilt.io/docs/) in the documentation section of Minium website
 
 ### Protractor [&#8593;](#end-to-end-testing-frameworks)
 
