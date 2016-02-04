@@ -16,7 +16,7 @@
 ```CoffeeScript
 # CoffeeScript
 describe 'Directive: myDir2', ->
-  element = scope = compile = null
+  element = scope = compile = defaultData = null
   validTemplate = '<my-dir2 data="someData"></my-dir2>'
 
   createDirective = (data, template) ->
@@ -64,7 +64,7 @@ describe 'Directive: myDir2', ->
 ```JavaScript
 // JavaScript
 describe('Directive: myDir2', function () {
-  var element, scope, compile,
+  var element, scope, compile, defaultData,
       validTemplate = '<my-dir2 data="someData"></my-dir2>';
 
   function createDirective(data, template) {
