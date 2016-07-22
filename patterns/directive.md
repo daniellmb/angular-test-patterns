@@ -113,7 +113,7 @@ describe('Directive: myDir', function () {
     // Add specs
   });
 
-  return describe('when destroyed', function () {
+  describe('when destroyed', function () {
     // Add specs
   });
 });
@@ -156,7 +156,7 @@ it 'should render the expected output', ->
 // JavaScript
 it('should render the expected output', function () {
   element = createDirective();
-  return expect(element.text()).toBe('this is my directive');
+  expect(element.text()).toBe('this is my directive');
 });
 ```
 
