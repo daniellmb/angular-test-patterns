@@ -16,12 +16,12 @@
 ```CoffeeScript
 # CoffeeScript
 describe 'Directive: myDir2', ->
-  element = scope = compile = null
+  element = scope = compile = defaultData = null
   validTemplate = '<my-dir2 data="someData"></my-dir2>'
 
   createDirective = (data, template) ->
     # Setup scope state
-    scope.someData = data
+    scope.data = data or defaultData
 
     # Create directive
     elm = compile(template or validTemplate) scope
@@ -64,14 +64,14 @@ describe 'Directive: myDir2', ->
 ```JavaScript
 // JavaScript
 describe('Directive: myDir2', function () {
-  var element, scope, compile,
+  var element, scope, compile, defaultData,
       validTemplate = '<my-dir2 data="someData"></my-dir2>';
 
   function createDirective(data, template) {
     var elm;
     
     // Setup scope state
-    scope.someData = data;
+    scope.data = data || defaultData;
 
     // Create directive
     elm = compile(template || validTemplate)(scope);
